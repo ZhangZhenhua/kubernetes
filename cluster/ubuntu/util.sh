@@ -239,6 +239,8 @@ function create-kube-apiserver-opts() {
 KUBE_APISERVER_OPTS="\
  --insecure-bind-address=0.0.0.0\
  --insecure-port=8080\
+ --bind-address=0.0.0.0\
+ --secure-port=8081\
  --etcd-servers=http://127.0.0.1:4001\
  --logtostderr=true\
  --service-cluster-ip-range=${1}\
