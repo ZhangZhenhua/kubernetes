@@ -449,6 +449,7 @@ function provision-master() {
   EXTRA_SANS=(
     IP:$MASTER_IP
     IP:${SERVICE_CLUSTER_IP_RANGE%.*}.1
+    IP:14.14.14.195
     DNS:kubernetes
     DNS:kubernetes.default
     DNS:kubernetes.default.svc
@@ -621,6 +622,7 @@ function provision-masterandnode() {
   EXTRA_SANS=(
     IP:${MASTER_IP}
     IP:${SERVICE_CLUSTER_IP_RANGE%.*}.1
+    IP:14.14.14.195
     DNS:kubernetes
     DNS:kubernetes.default
     DNS:kubernetes.default.svc
